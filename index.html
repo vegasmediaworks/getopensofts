@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Download free powerful software and VEGAS Pro scripts by iEmby. Tools like FLEXEncoder, MiniTools, and Quick Render to enhance your workflow.">
-    <title>iEmby's Software & Scripts</title>
-    
-    <!-- Tailwind CSS for styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Feather Icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
-    
-    <style>
-        /* Custom styles for a material design feel */
+ <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Download free powerful software and VEGAS Pro scripts by iEmby. Tools like FLEXEncoder, MiniTools, and Quick Render to enhance your workflow." name="description">
+  <title>
+   iEmby's Software & Scripts
+  </title>
+  <!-- Tailwind CSS for styling -->
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons">
+  </script>
+  <style>
+   /* Custom styles for a material design feel */
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f5f5f5; /* Light grey background */
@@ -81,6 +81,7 @@
             grid-auto-columns: 350px; /* Fixed width for each card */
             gap: 2rem; /* space between cards */
             padding: 1rem 4px; /* Give some vertical padding */
+            overflow-x: auto;
             -ms-overflow-style: none;  /* IE and Edge */
             scrollbar-width: none;  /* Firefox */
         }
@@ -94,162 +95,215 @@
         .tabs-container {
              grid-auto-columns: max-content; /* Tabs should take their own width */
         }
-    </style>
-</head>
-<body class="antialiased">
-
-    <!-- Header Section -->
-    <header class="bg-white shadow-md">
-        <div class="container mx-auto px-6 py-8 text-center">
-            <h1 class="text-4xl font-bold text-gray-800">iEmby's Software Hub</h1>
-            <p class="mt-2 text-lg text-gray-600">Free Tools & Scripts to Enhance Your Workflow</p>
-        </div>
-    </header>
-
-    <!-- Navigation Tabs -->
-    <nav id="tabs-container" class="container mx-auto px-6 py-6 horizontal-scroll-container tabs-container">
-        <button id="tab-software" class="tab-btn active" onclick="showPage('software')">Open Free Software</button>
-        <button id="tab-scripts" class="tab-btn" onclick="showPage('scripts')">VEGAS Pro Scripts</button>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-8">
-
-        <!-- Page 1: Open Free Software -->
-        <div id="page-software">
-            <div id="software-container" class="horizontal-scroll-container">
-                
-                <!-- FLEXEncoder Card -->
-                <div class="card p-8 flex flex-col">
-                    <h3 class="text-2xl font-bold mb-4 text-gray-900">FLEXEncoder</h3>
-                    <p class="text-gray-700 mb-4 flex-grow">A versatile Video & Audio Converter and Encoder, powered by FFMPEG. It also supports downloading videos from various websites using YTDLP.</p>
-                    <a href="https://mega.nz/folder/2voDgRwK#MVDDhHAJBddlwsISyT6ZMw" target="_blank" rel="noopener noreferrer" class="btn-primary mt-auto">
-                        <i data-feather="download"></i>
-                        <span>Download</span>
-                    </a>
-                </div>
-
-                <!-- MyTypingTutor Card -->
-                <div class="card p-8 flex flex-col">
-                    <h3 class="text-2xl font-bold mb-4 text-gray-900">MyTypingTutor</h3>
-                    <div class="flex-grow">
-                        <p class="text-gray-700 mb-4">Boost your typing skills with this self-testing tool. Paste text and re-type it to improve your speed and accuracy.</p>
-                        <ul class="list-disc list-inside text-gray-600 mb-6">
-                            <li>Self-Testing Method</li>
-                            <li>Get Accurate & Useful Results</li>
-                            <li>Check Old Records</li>
-                        </ul>
-                    </div>
-                    <a href="https://mega.nz/folder/LyBnGYBS#TtED7RdFFc2Y-523eQLrjw" target="_blank" rel="noopener noreferrer" class="btn-primary mt-auto">
-                        <i data-feather="download"></i>
-                        <span>Download</span>
-                    </a>
-                </div>
-
-                <!-- Filexa Card -->
-                <div class="card p-8 flex flex-col">
-                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Filexa</h3>
-                    <div class="flex-grow">
-                        <p class="text-gray-700 mb-4">A safe and tested utility to manage your files efficiently.</p>
-                         <ul class="list-disc list-inside text-gray-600 mb-6">
-                            <li>Sort mixed files by category.</li>
-                            <li>Unfolder files when needed.</li>
-                            <li>Find duplicate files in any folder.</li>
-                        </ul>
-                    </div>
-                    <a href="https://mega.nz/folder/nm4lza6Z#Xk9jOXBVJiWb2V7u1ev3zA" target="_blank" rel="noopener noreferrer" class="btn-primary mt-auto">
-                        <i data-feather="download"></i>
-                        <span>Download</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Page 2: VEGAS Pro Scripts -->
-        <div id="page-scripts" class="hidden">
-            <div id="scripts-container" class="horizontal-scroll-container">
-                
-                <!-- MiniTools Card -->
-                <div class="card p-8 flex flex-col text-center">
-                    <h3 class="text-2xl font-bold mb-4 text-gray-900">MiniTools by iEmby</h3>
-                    <p class="text-gray-700 mb-6 flex-grow">A set of various useful tools for small but important tasks in VEGAS Pro.</p>
-                    <a href="https://mega.nz/folder/r2ZjQBCT#bfSSNji_7O6MhRaJl2fYaA" target="_blank" rel="noopener noreferrer" class="btn-primary mt-auto mb-4">
-                        <i data-feather="download"></i>
-                        <span>Download</span>
-                    </a>
-                    <p class="text-sm text-gray-500">Please leave feedback. Thank you!</p>
-                </div>
-                
-                <!-- Quick Render Card -->
-                <div class="card p-8 flex flex-col text-center">
-                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Quick Render by iEmby</h3>
-                    <p class="text-gray-700 mb-6 flex-grow">A powerful tool for rendering your project in almost every single situation within VEGAS Pro.</p>
-                    <a href="https://mega.nz/folder/qiATDBjY#o2Fwxy_tCAsT4eVYE0UhGw" target="_blank" rel="noopener noreferrer" class="btn-primary mt-auto mb-4">
-                        <i data-feather="download"></i>
-                        <span>Download</span>
-                    </a>
-                    <p class="text-sm text-gray-500">Please leave feedback. Thank you!</p>
-                </div>
-
-                <!-- Manage VEGAS Preferences Card -->
-                <div class="card p-8 flex flex-col text-center">
-                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Manage VEGAS Preferences</h3>
-                    <p class="text-gray-700 mb-6 flex-grow">Manage all VEGAS Pro preference settings with this one simple script.</p>
-                    <a href="https://mega.nz/folder/D7wVQBTb#K9iZO9TeurIVG6hhWCYE1g" target="_blank" rel="noopener noreferrer" class="btn-primary mt-auto mb-4">
-                        <i data-feather="download"></i>
-                        <span>Download</span>
-                    </a>
-                    <p class="text-sm text-gray-500">Please leave feedback. Thank you!</p>
-                </div>
-            </div>
-        </div>
-        
-        <!-- NEW: Feedback Section -->
-        <div class="mt-16">
-            <h2 class="text-3xl font-bold text-gray-800 mb-2">Feedback & Suggestions</h2>
-            <div id="feedback-container" class="horizontal-scroll-container">
-                
-                <!-- Feedback Card 1 -->
-                <div class="card p-6 flex flex-col" style="width: 400px;">
-                    <i data-feather="message-circle" class="w-10 h-10 text-indigo-200 mb-4"></i>
-                    <p class="text-gray-600 italic mb-4 flex-grow">"FLEXEncoder is a game changer! It's so much faster than other tools I've used. The YTDLP integration is genius. Thank you for making this available for free."</p>
-                    <p class="font-bold text-right text-indigo-600">- Raj (Video Editor)</p>
-                </div>
-                
-                <!-- Feedback Card 2 -->
-                <div class="card p-6 flex flex-col" style="width: 400px;">
-                    <i data-feather="message-circle" class="w-10 h-10 text-indigo-200 mb-4"></i>
-                    <p class="text-gray-600 italic mb-4 flex-grow">"The VEGAS Pro scripts, especially Quick Render, have saved me hours of work. I can't imagine my workflow without them now. Keep up the excellent work, iEmby!"</p>
-                    <p class="font-bold text-right text-indigo-600">- Simran (YouTuber)</p>
-                </div>
-
-                <!-- Feedback Card 3 -->
-                <div class="card p-6 flex flex-col" style="width: 400px;">
-                    <i data-feather="message-circle" class="w-10 h-10 text-indigo-200 mb-4"></i>
-                    <p class="text-gray-600 italic mb-4 flex-grow">"Finally, a simple tool like Filexa to organize my messy download folder. The duplicate file finder is surprisingly accurate. Highly recommended."</p>
-                    <p class="font-bold text-right text-indigo-600">- Amit Kumar</p>
-                </div>
-                 <!-- Feedback Card 4 -->
-                <div class="card p-6 flex flex-col" style="width: 400px;">
-                    <i data-feather="message-circle" class="w-10 h-10 text-indigo-200 mb-4"></i>
-                    <p class="text-gray-600 italic mb-4 flex-grow">"MyTypingTutor helped me increase my typing speed from 40 WPM to 75 WPM in just two weeks. The self-testing method really works."</p>
-                    <p class="font-bold text-right text-indigo-600">- Priya Sharma (Student)</p>
-                </div>
-
-            </div>
-        </div>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-white mt-12">
-        <div class="container mx-auto px-6 py-6 text-center text-gray-600">
-            <p>&copy; 2024 iEmby. All Rights Reserved.</p>
-        </div>
-    </footer>
-    
-    <script>
-        // JavaScript for tab functionality
+  </style>
+ </head>
+ <body class="antialiased">
+  <!-- Header Section -->
+  <header class="bg-white shadow-md">
+   <div class="container mx-auto px-6 py-8 text-center">
+    <h1 class="text-4xl font-bold text-gray-800">
+     iEmby's Software Hub
+    </h1>
+    <p class="mt-2 text-lg text-gray-600">
+     Free Tools & Scripts to Enhance Your Workflow
+    </p>
+   </div>
+  </header>
+  <!-- Navigation Tabs -->
+  <nav class="container mx-auto px-6 py-6 horizontal-scroll-container tabs-container" id="tabs-container">
+   <button class="tab-btn active" id="tab-software" onclick="showPage('software')">
+    Open Free Software
+   </button>
+   <button class="tab-btn" id="tab-scripts" onclick="showPage('scripts')">
+    VEGAS Pro Scripts
+   </button>
+  </nav>
+  <!-- Main Content -->
+  <main class="container mx-auto px-6 py-8">
+   <!-- Page 1: Open Free Software -->
+   <div id="page-software">
+    <div class="horizontal-scroll-container" id="software-container">
+     <!-- FLEXEncoder Card -->
+     <div class="card p-8 flex flex-col">
+      <h3 class="text-2xl font-bold mb-4 text-gray-900">
+       MyTypingTutor
+      </h3>
+      <div class="flex-grow">
+       <p class="text-gray-700 mb-4">
+        Boost your typing skills with this self-testing tool. Paste text and re-type it to improve your speed and accuracy.
+       </p>
+       <ul class="list-disc list-inside text-gray-600 mb-6">
+        <li>
+         Self-Testing Method
+        </li>
+        <li>
+         Get Accurate & Useful Results
+        </li>
+        <li>
+         Check Old Records
+        </li>
+       </ul>
+      </div>
+      <a class="btn-primary mt-auto" href="https://mega.nz/folder/LyBnGYBS#TtED7RdFFc2Y-523eQLrjw" rel="noopener noreferrer" target="_blank">
+       <i data-feather="download">
+       </i>
+       <span>
+        Download
+       </span>
+      </a>
+     </div>
+     <div class="card p-8 flex flex-col">
+      <h3 class="text-2xl font-bold mb-4 text-gray-900">
+       Filexa
+      </h3>
+      <div class="flex-grow">
+       <p class="text-gray-700 mb-4">
+        A safe and tested utility to manage your files efficiently.
+       </p>
+       <ul class="list-disc list-inside text-gray-600 mb-6">
+        <li>
+         Sort mixed files by category.
+        </li>
+        <li>
+         Unfolder files when needed.
+        </li>
+        <li>
+         Find duplicate files in any folder.
+        </li>
+       </ul>
+      </div>
+      <a class="btn-primary mt-auto" href="https://mega.nz/folder/nm4lza6Z#Xk9jOXBVJiWb2V7u1ev3zA" rel="noopener noreferrer" target="_blank">
+       <i data-feather="download">
+       </i>
+       <span>
+        Download
+       </span>
+      </a>
+     </div>
+     <div class="card p-8 flex flex-col">
+      <h3 class="text-2xl font-bold mb-4 text-gray-900">
+       FLEXEncoder
+      </h3>
+      <p class="text-gray-700 mb-4 flex-grow">
+       A versatile Video & Audio Converter and Encoder, powered by FFMPEG. It also supports downloading videos from various websites using YTDLP.
+      </p>
+      <a class="btn-primary mt-auto" href="https://mega.nz/folder/2voDgRwK#MVDDhHAJBddlwsISyT6ZMw" rel="noopener noreferrer" target="_blank">
+       <i data-feather="download">
+       </i>
+       <span>
+        Download
+       </span>
+      </a>
+     </div>
+     <!-- MyTypingTutor Card -->
+     <!-- Filexa Card -->
+     <div class="card p-8 flex flex-col">
+      <h3 class="text-2xl font-bold mb-4 text-gray-900">
+       Timbar
+      </h3>
+      <p class="text-gray-700 mb-4 flex-grow">
+       Progress Bar & Timer Generator
+      </p>
+      <a class="btn-primary mt-auto" href="https://mega.nz/folder/zrJxTZQB#Co7FicN3je2D66a_aGNB9w" rel="noopener noreferrer" target="_blank">
+       <i data-feather="download">
+       </i>
+       <span>
+        Download
+       </span>
+      </a>
+     </div>
+    </div>
+   </div>
+   <!-- Page 2: VEGAS Pro Scripts -->
+   <div class="hidden" id="page-scripts">
+    <div class="horizontal-scroll-container" id="scripts-container">
+     <div class="card p-8 flex flex-col text-center">
+      <h3 class="text-2xl font-bold mb-4 text-gray-900">
+       MiniTools by iEmby
+      </h3>
+      <p class="text-gray-700 mb-6 flex-grow">
+       A set of various useful tools for small but important tasks in VEGAS Pro.
+      </p>
+      <a class="btn-primary mt-auto mb-4" href="https://mega.nz/folder/r2ZjQBCT#bfSSNji_7O6MhRaJl2fYaA" rel="noopener noreferrer" target="_blank">
+       <i data-feather="download">
+       </i>
+       <span>
+        Download
+       </span>
+      </a>
+      <p class="text-sm text-gray-500">
+       Please leave feedback. Thank you!
+      </p>
+     </div>
+     <div class="card p-8 flex flex-col text-center">
+      <h3 class="text-2xl font-bold mb-4 text-gray-900">
+       Quick Render by iEmby
+      </h3>
+      <p class="text-gray-700 mb-6 flex-grow">
+       A powerful tool for rendering your project in almost every single situation within VEGAS Pro.
+      </p>
+      <a class="btn-primary mt-auto mb-4" href="https://mega.nz/folder/qiATDBjY#o2Fwxy_tCAsT4eVYE0UhGw" rel="noopener noreferrer" target="_blank">
+       <i data-feather="download">
+       </i>
+       <span>
+        Download
+       </span>
+      </a>
+      <p class="text-sm text-gray-500">
+       Please leave feedback. Thank you!
+      </p>
+     </div>
+     <div class="card p-8 flex flex-col text-center">
+      <h3 class="text-2xl font-bold mb-4 text-gray-900">
+       Manage VEGAS Preferences
+      </h3>
+      <p class="text-gray-700 mb-6 flex-grow">
+       Manage all VEGAS Pro preference settings with this one simple script.
+      </p>
+      <a class="btn-primary mt-auto mb-4" href="https://mega.nz/folder/D7wVQBTb#K9iZO9TeurIVG6hhWCYE1g" rel="noopener noreferrer" target="_blank">
+       <i data-feather="download">
+       </i>
+       <span>
+        Download
+       </span>
+      </a>
+      <p class="text-sm text-gray-500">
+       Please leave feedback. Thank you!
+      </p>
+     </div>
+     <!-- MiniTools Card -->
+     <!-- Quick Render Card -->
+     <!-- Manage VEGAS Preferences Card -->
+    </div>
+   </div>
+   <!-- *** UPDATED: Mail Feedback Section *** -->
+   <div class="mt-12 bg-white rounded-xl shadow-md p-8 max-w-2xl mx-auto text-center">
+    <h3 class="text-2xl font-bold text-gray-800 mb-2">
+     Have Feedback or a Suggestion?
+    </h3>
+    <p class="text-gray-600 mb-6">
+     I'd love to hear from you! Click the button below to send an email directly to me.
+    </p>
+    <a class="btn-primary w-full md:w-auto" href="mailto:vegasmediaworks@gmail.com?subject=Feedback%20for%20iEmby's%20Software%20Hub">
+     <i data-feather="mail">
+     </i>
+     <span>
+      Send Feedback via Email
+     </span>
+    </a>
+   </div>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-white mt-12">
+   <div class="container mx-auto px-6 py-6 text-center text-gray-600">
+    <p>
+     &copy; 2024 iEmby. All Rights Reserved.
+    </p>
+   </div>
+  </footer>
+  <!-- *** REMOVED FIREBASE SCRIPT *** -->
+  <script>
+   // JavaScript for tab functionality
         const pages = {
             software: document.getElementById('page-software'),
             scripts: document.getElementById('page-scripts')
@@ -274,7 +328,7 @@
             if (tabs[pageName]) tabs[pageName].classList.add('active');
         }
 
-        // --- NEW JAVASCRIPT FOR HORIZONTAL SCROLL ON MOUSE WHEEL ---
+        // --- JAVASCRIPT FOR HORIZONTAL SCROLL ON MOUSE WHEEL ---
         function setupHorizontalScroll(container) {
             if (container) {
                 container.addEventListener('wheel', (event) => {
@@ -287,22 +341,14 @@
             }
         }
 
-        // Get all containers
-        const softwareContainer = document.getElementById('software-container');
-        const scriptsContainer = document.getElementById('scripts-container');
-        const tabsContainer = document.getElementById('tabs-container');
-        const feedbackContainer = document.getElementById('feedback-container'); // New container
-
-        // Apply the horizontal scroll function to them
-        setupHorizontalScroll(softwareContainer);
-        setupHorizontalScroll(scriptsContainer);
-        setupHorizontalScroll(tabsContainer);
-        setupHorizontalScroll(feedbackContainer); // Apply to new container
-
+        // Apply scroll to all containers
+        document.addEventListener('DOMContentLoaded', () => {
+             const containers = document.querySelectorAll('.horizontal-scroll-container');
+             containers.forEach(setupHorizontalScroll);
+        });
 
         // Initialize Feather Icons
         feather.replace();
-    </script>
-</body>
+  </script>
+ </body>
 </html>
-
