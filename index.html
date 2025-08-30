@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Download free powerful software and VEGAS Pro scripts by iEmby. Tools like FLEXEncoder, MiniTools, and Quick Render to enhance your workflow." name="description"/>
+  <title>
+   iEmby's Software &amp; Scripts
+  </title>
+  <!-- Tailwind CSS for styling -->
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons">
+  </script>
+  <style>
+   /* Custom styles for a material design feel */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f5f5; /* Light grey background */
+            color: #212121; /* Dark grey text */
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background-color: #3f51b5; /* Indigo */
+            color: #ffffff;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 12px 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .btn-primary:hover {
+            background-color: #303f9f; /* Darker Indigo */
+        }
+        
+        .tab-btn {
+            padding: 12px 24px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s, color 0.2s;
+            border: 2px solid transparent;
+            white-space: nowrap; /* Prevent tab text from wrapping */
+        }
+        
+        .tab-btn.active {
+            background-color: #3f51b5;
+            color: white;
+        }
+        
+        .tab-btn:not(.active) {
+            color: #3f51b5;
+            border-color: #3f51b5;
+        }
+
+        /* --- NEW STYLES FOR HORIZONTAL SCROLL --- */
+        .horizontal-scroll-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 2rem; /* space between cards */
+            padding: 1rem 4px; /* Give some vertical padding */
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .horizontal-scroll-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Set a fixed width for cards to prevent them from shrinking */
+        .horizontal-scroll-container .card {
+            width: 350px;
+            flex-shrink: 0;
+        }
+        
+        /* Make nav scrollable if tabs overflow */
+        .tabs-container {
+            justify-content: flex-start; /* Align tabs to the start */
+        }
+  </style>
+ </head>
+ <body class="antialiased">
+  <!-- Header Section -->
+  <header class="bg-white shadow-md">
+   <div class="container mx-auto px-6 py-8 text-center">
+    <h1 class="text-4xl font-bold text-gray-800">
+     iEmby's Software Hub
+    </h1>
+    <p class="mt-2 text-lg text-gray-600">
+     Free Tools &amp; Scripts to Enhance Your Workflow
+    </p>
+   </div>
+  </header>
+  <!-- Navigation Tabs -->
+  <nav class="container mx-auto px-6 py-6 flex items-center space-x-4 horizontal-scroll-container tabs-container" id="tabs-container">
+   <button class="tab-btn active" id="tab-software" onclick="showPage('software')">
+    Open Free Software
+   </button>
+   <button class="tab-btn" id="tab-scripts" onclick="showPage('scripts')">
+    VEGAS Pro Scripts
+   </button>
+   <!-- Aap yahan aur tabs add kar sakte hain, jaise: -->
+   <!-- <button id="tab-new" class="tab-btn" onclick="showPage('new')">New Section</button> -->
+  </nav>
+  <!-- Main Content -->
+  <main class="container mx-auto px-6 py-8">
+   <!-- Page 1: Open Free Software -->
+   <div id="page-software">
+    <div class="horizontal-scroll-container" id="software-container">
+     <!-- FLEXEncoder Card -->
+     <div class="card p-8 flex flex-col">
+      <h3 class="text-2xl font-bold mb-4 text-gray-900">
+       FLEXEncoder
+      </h3>
+      <p class="text-gray-700 mb-4 flex-grow">
+       A versatile Video &amp; Audio Converter and Encoder, powered by FFMPEG. It also supports downloading videos from various websites using YTDLP.
+      </p>
+      <a class="btn-primary mt-auto" href="https://mega.nz/folder/2voDgRwK#MVDDhHAJBddlwsISyT6ZMw" rel="noopener noreferrer" target="_blank">
+       <i data-feather="download">
+       </i>
+       <span>
+        Download
+       </span>
+      </a>
+     </div>
+     <!-- MyTypingTutor Card -->
+     <div class="card p-8 flex flex-col">
+      <h3 class="text-2xl font-bold mb-4 text-gray-900">
+       MyTypingTutor
+      </h3>
+      <p class="text-gray-700 mb-4">
+       Boost your typing skills with this self-testing tool. Paste text and re-type it to improve your speed and accuracy.
+      </p>
+      <ul class="list-disc list-inside text-gray-600 mb-6 flex-grow">
+       <li>
+        Self-Testing Method
+       </li>
+       <li>
+        Get Accurate &amp; Useful Results
+       </li>
+       <li>
+        Check Old Records
+       </li>
+      </ul>
+      <a class="btn-primary mt-auto" href="https://mega.nz/folder/LyBnGYBS#TtED7RdFFc2Y-523eQLrjw" rel="noopener noreferrer" target="_blank">
+       <i data-feather="download">
+       </i>
+       <span>
+        Download
+       </span>
+      </a>
+     </div>
+     <!-- Filexa Card -->
+     <div class="card p-8 flex flex-col">
+      <h3 class="text-2xl font-bold mb-4 text-gray-900">
+       Filexa
+      </h3>
+      <p class="text-gray-700 mb-4">
+       A safe and tested utility to manage your files efficiently.
+      </p>
+      <ul class="list-disc list-inside text-gray-600 mb-6 flex-grow">
+       <li>
+        Sort mixed files by category.
+       </li>
+       <li>
+        Unfolder files when needed.
+       </li>
+       <li>
+        Find duplicate files in any folder.
+       </li>
+      </ul>
+      <a class="btn-primary mt-auto" href="https://mega.nz/folder/nm4lza6Z#Xk9jOXBVJiWb2V7u1ev3zA" rel="noopener noreferrer" target="_blank">
+       <i data-feather="download">
+       </i>
+       <span>
+        Download
+       </span>
+      </a>
+     </div>
+     <!-- Yahan aur software cards add kiye ja sakte hain -->
+     <!-- <div class="card p-8 flex flex-col">... New Card ...</div> -->
+     <div class="card p-8 flex flex-col">
+      <h3 class="text-2xl font-bold mb-4 text-gray-900">
+       Timbar
+      </h3>
+      <p class="text-gray-700 mb-4 flex-grow">
+       Progress Bar &amp; Timer Generator At A Given Time By User
+      </p>
+      <a class="btn-primary mt-auto" href="https://mega.nz/folder/zrJxTZQB#Co7FicN3je2D66a_aGNB9w" rel="noopener noreferrer" target="_blank">
+       <i data-feather="download">
+       </i>
+       <span>
+        Download
+       </span>
+      </a>
+     </div>
+    </div>
+   </div>
+   <!-- Page 2: VEGAS Pro Scripts -->
+   <div class="hidden" id="page-scripts">
+    <div class="horizontal-scroll-container" id="scripts-container">
+     <!-- MiniTools Card -->
+     <div class="card p-8 flex flex-col text-center">
+      <h3 class="text-2xl font-bold mb-4 text-gray-900">
+       MiniTools by iEmby
+      </h3>
+      <p class="text-gray-700 mb-6 flex-grow">
+       A set of various useful tools for small but important tasks in VEGAS Pro.
+      </p>
+      <a class="btn-primary mb-4" href="https://mega.nz/folder/r2ZjQBCT#bfSSNji_7O6MhRaJl2fYaA" rel="noopener noreferrer" target="_blank">
+       <i data-feather="download">
+       </i>
+       <span>
+        Download
+       </span>
+      </a>
+      <p class="text-sm text-gray-500">
+       Please leave feedback. Thank you!
+      </p>
+     </div>
+     <!-- Quick Render Card -->
+     <div class="card p-8 flex flex-col text-center">
+      <h3 class="text-2xl font-bold mb-4 text-gray-900">
+       Quick Render by iEmby
+      </h3>
+      <p class="text-gray-700 mb-6 flex-grow">
+       A powerful tool for rendering your project in almost every single situation within VEGAS Pro.
+      </p>
+      <a class="btn-primary mb-4" href="https://mega.nz/folder/qiATDBjY#o2Fwxy_tCAsT4eVYE0UhGw" rel="noopener noreferrer" target="_blank">
+       <i data-feather="download">
+       </i>
+       <span>
+        Download
+       </span>
+      </a>
+      <p class="text-sm text-gray-500">
+       Please leave feedback. Thank you!
+      </p>
+     </div>
+     <!-- Manage VEGAS Preferences Card -->
+     <div class="card p-8 flex flex-col text-center">
+      <h3 class="text-2xl font-bold mb-4 text-gray-900">
+       Manage VEGAS Preferences
+      </h3>
+      <p class="text-gray-700 mb-6 flex-grow">
+       Manage all VEGAS Pro preference settings with this one simple script.
+      </p>
+      <a class="btn-primary mb-4" href="https://mega.nz/folder/D7wVQBTb#K9iZO9TeurIVG6hhWCYE1g" rel="noopener noreferrer" target="_blank">
+       <i data-feather="download">
+       </i>
+       <span>
+        Download
+       </span>
+      </a>
+      <p class="text-sm text-gray-500">
+       Please leave feedback. Thank you!
+      </p>
+     </div>
+     <!-- Yahan aur script cards add kiye ja sakte hain -->
+    </div>
+   </div>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-white mt-12">
+   <div class="container mx-auto px-6 py-6 text-center text-gray-600">
+    <p>
+     © 2024 iEmby. All Rights Reserved.
+    </p>
+   </div>
+  </footer>
+  <script>
+   // JavaScript for tab functionality
+        const pages = {
+            software: document.getElementById('page-software'),
+            scripts: document.getElementById('page-scripts')
+        };
+        const tabs = {
+            software: document.getElementById('tab-software'),
+            scripts: document.getElementById('tab-scripts')
+        };
+
+        function showPage(pageName) {
+            // Hide all pages
+            Object.values(pages).forEach(page => {
+                if (page) page.classList.add('hidden');
+            });
+            // Deactivate all tabs
+            Object.values(tabs).forEach(tab => {
+                if(tab) tab.classList.remove('active');
+            });
+
+            // Show the selected page and activate its tab
+            if (pages[pageName]) pages[pageName].classList.remove('hidden');
+            if (tabs[pageName]) tabs[pageName].classList.add('active');
+        }
+
+        // --- NEW JAVASCRIPT FOR HORIZONTAL SCROLL ON MOUSE WHEEL ---
+        function setupHorizontalScroll(container) {
+            if (container) {
+                container.addEventListener('wheel', (event) => {
+                    // Agar container horizontally scrollable hai, tabhi aage badho
+                    if (container.scrollWidth > container.clientWidth) {
+                        event.preventDefault();
+                        container.scrollLeft += event.deltaY;
+                    }
+                });
+            }
+        }
+
+        // Get all containers
+        const softwareContainer = document.getElementById('software-container');
+        const scriptsContainer = document.getElementById('scripts-container');
+        const tabsContainer = document.getElementById('tabs-container');
+
+        // Apply the horizontal scroll function to them
+        setupHorizontalScroll(softwareContainer);
+        setupHorizontalScroll(scriptsContainer);
+        setupHorizontalScroll(tabsContainer);
+
+
+        // Initialize Feather Icons
+        feather.replace();
+  </script>
+ </body>
+</html>
